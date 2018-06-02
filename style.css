@@ -1,0 +1,349 @@
+
+/* --------------------------------------------------------------
+Reset
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+height:100%;
+}
+
+body {
+  background: #f4f4f4;
+  height:100%;
+  font-size:16px;
+  font-family: "Lato", "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+  display: block;
+}
+
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+a img {
+  border: 0;
+}
+
+
+/* --------------------------------------------------------------
+Links
+-------------------------------------------------------------- */
+a {
+  color: #05B8CC;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #ccc;
+}
+
+/* --------------------------------------------------------------
+Menus
+-------------------------------------------------------------- */
+/* --------------------------------------------------------------
+Social Links
+-------------------------------------------------------------- */
+.menu {list-style-type: none; clear:both; margin: 0 0 10px}
+.menu li {display:inline-block; margin-right:10px;}
+ .menu li a:before,.skype:before, .menu li .skype:before, .cv:before {
+  margin-right: 5px;
+  font-family: 'FontAwesome';
+  color: #8A96A0;
+}
+.menu li a[href*="twitter.com"]:before {
+  content: "\f099";
+}
+.menu li a[href*="twitter.com"]:hover:before {
+  color: #53B9FD;
+}
+.menu li a[href*="facebook.com"]:before {
+  content: "\f082";
+}
+.menu li a[href*="facebook.com"]:hover:before {
+  color: #78A4DD;
+}
+.menu li a[href*="google.com"]:before {
+  content: "\f0d5";
+}
+.menu li a[href*="google.com"]:hover:before {
+  color: #FC5B5B;
+}
+.menu li a[href*="instagram.com"]:before {
+  content: "\f16d";
+}
+.menu li a[href*="instagram.com"]:hover:before {
+  color: #78A6C5;
+}
+
+.menu li a[href*="github.com"]:before {
+  content: "\f113";
+}
+.menu li a[href*="github.com"]:hover:before {
+  color: #fff;
+}
+
+.menu li a[href*="linkedin.com"]:before {
+  content: "\f0e1";
+}
+.menu li a[href*="linkedin.com"]:hover:before {
+  color: #287bbc;
+}
+
+.menu li a[href*="mailto"]:before {
+  content: "\f003";
+}
+
+.menu li a[href*="mailto"]:hover:before {
+  color: #FC5B5B;
+}
+
+.menu li .skype:before {
+  content: "\f17e";
+}
+
+.menu li span.skype:hover:before {
+  color: #00aff0;
+}
+
+.menu li a.cv:before {
+  content: "\f1c1";
+}
+.menu li a.cv:hover:before {
+  color: #F00;
+}
+/* --------------------------------------------------------------
+Clearings
+-------------------------------------------------------------- */
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+  content: '';
+  display: table;
+}
+
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
+  clear: both;
+}
+
+/* --------------------------------------------------------------
+Content
+-------------------------------------------------------------- */
+
+#page1, #page2, #page3, #page4 {
+	 height:100%; padding:20px; position: relative; text-align: center;
+ }
+
+ @media (max-width: 800px) {
+
+#page1, #page2, #page3, #page4 {
+			padding-left: 0px;
+}
+
+}
+
+/*circles */
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+
+
+
+
+
+
+.ch-img-1 {
+	background-image: url('https://scontent.cdninstagram.com/t51.2885-19/11375277_1417786971877958_872377671_a.jpg');
+}
+
+
+
+
+/* --------------------------------------------------------------
+Typography
+-------------------------------------------------------------- */
+
+body, button, input, select, textarea {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  color: #383f49;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+
+}
+
+h1 {
+
+font-size: 2em;
+font-size: 2rem;
+
+}
+
+h2 {
+font-size: 1.2em;
+font-size: 1.2rem;
+margin-top:20px;
+
+}
+
+
+
+p {
+  margin-bottom: 1.4em;
+}
+@media (max-width: 500px) {
+  p {
+    margin-bottom: 1.2em;
+  }
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  color: #383f49;
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 1em 0 0 0;
+  padding-top: 20px;
+  position: relative;
+}
+@media (max-width: 500px) {
+  blockquote {
+
+    line-height: 1.4;
+  }
+}
+blockquote:before {
+  content: " ";
+  width: 40px;
+  height: 4px;
+  background: #383f49;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+blockquote p {
+  margin-bottom: 1em;
+}
+
+
+.heading {
+
+	color:#222;
+	font-weight:300;
+	text-transform:uppercase;
+	padding-bottom:5px;
+	letter-spacing:0.025em;
+}
+
+.subheading {
+	text-transform:uppercase;
+	color:#05B8CC;
+
+}
+
+@media (max-width: 640px) {
+	.subheading {
+
+}
+
+}
+.text {
+	text-align:left;
+	font-size:13px;
+	color:#222;
+	margin-top:10px;
+	line-height:1.4em;
+}
+
+@media (max-width: 640px) {
+	.text {
+
+}
+
+}
