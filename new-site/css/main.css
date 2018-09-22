@@ -545,7 +545,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #6bbfb4;
+    background-color: #fff;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1447,11 +1447,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 40px;
+    left: 50%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 501;
 }
 
@@ -1651,7 +1651,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #6bbfb4;
+    color: #fff;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1666,6 +1666,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 .header-menu-text {
@@ -1675,6 +1676,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: -70px;
     width: 70px;
     padding-left: 12px;
+}
+
+.header-menu-toggle:hover .header-menu-text, .header-menu-toggle:focus .header-menu-text{
+    text-decoration: underline;
 }
 
 .header-menu-icon {
