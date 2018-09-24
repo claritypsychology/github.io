@@ -1,7 +1,5 @@
 /* ===================================================================
  *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
  *  ------------------------------------------------------------------
  *
  *  TOC:
@@ -1449,7 +1447,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translateY(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 501;
@@ -1726,7 +1724,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         height: 90px;
     }
     .header-logo {
-        left: 30px;
+      /*  left: 30px;*/
     }
     .header-menu-toggle {
         right: 25px;
@@ -2940,6 +2938,7 @@ html.no-csstransitions .home-content__main {
     background-image: url("../images/contact-us.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
+    background-size:cover;
     padding-top: 15rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
