@@ -2413,6 +2413,22 @@ html.no-csstransitions .home-content__main {
     margin-top: -.6rem;
 }
 
+.service-text img {
+  display: block;
+  width: 50%;
+  margin: 0 auto 20px;
+}
+
+.service-text .title {
+  display:block;
+  font-weight:bold;
+  color: #6bbfb4;
+}
+
+.service-text .location {
+  display:block;
+  font-weight:bold;
+}
 
 /* -------------------------------------------------------------------
  * responsive:
